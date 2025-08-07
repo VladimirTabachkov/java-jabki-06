@@ -10,12 +10,6 @@ import java.util.UUID;
  * deposit(double amount) (пополнение),
  * withdraw(double amount) (снятие, не может уйти в минус),
  * displayInfo() (выводит номер счета и баланс).
- *
- * Задание:
- *
- * Создайте массив Account[] accounts с объектами SavingsAccount и CreditAccount.
- *
- * Продемонстрируйте полиморфизм: вызовите withdraw() и displayInfo() для всех элементов массива.
  */
 public class Account {
     private final UUID accountNumber;
@@ -55,5 +49,4 @@ public class Account {
     public void displayInfo() {
         System.out.printf("Счет №%s; Баланс %s\n", this.accountNumber, this.balance);
     }
-
 }

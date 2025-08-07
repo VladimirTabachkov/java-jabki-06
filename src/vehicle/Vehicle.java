@@ -5,15 +5,6 @@ package vehicle;
  * Создайте иерархию транспортных средств:
  * Базовый класс Vehicle с полями: maxSpeed, cargoCapacity.
  * Метод deliver(String destination) выводит: "Доставка в [destination]".
- *
- * Класс Drone (наследует Vehicle)
- * Переопределите deliver(), добавив: "Дрон взлетел. " + родительское сообщение.
- *
- * Задание:
- *
- * Создайте метод startDelivery(Vehicle vehicle, String address), вызывающий deliver().
- *
- * Продемонстрируйте работу с объектами Truck и Drone через этот метод.
  */
 
 public class Vehicle {

@@ -6,18 +6,6 @@ package character;
  * Методы:
  * attack(): "Атакую!",
  * takeDamage(int damage): уменьшает health.
- *
- * Класс Warrior (наследует Character)
- * Переопределите attack(): "Мечом в лицо!".
- * Добавьте метод block(), уменьшающий получаемый урон.
- *
- * Класс Mage (наследует Character)
- * Переопределите attack(): "Огненный шар!".
- * Добавьте метод heal(), восстанавливающий здоровье.
- *
- * Задание:
- *
- * Создайте бой между Warrior и Mage через вызовы attack() и takeDamage().
  */
 
 public class Character {

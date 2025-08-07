@@ -69,25 +69,16 @@ public class Main {
         Mage mage = new Mage("Warlord", 150);
         Warrior warrior = new Warrior("Paladin", 300);
 
+        System.out.println("Begin");
+        warrior.attack();
+        mage.takeDamage(5);
+        mage.heal();
         mage.attack();
-        warrior.takeDamage(warrior.block(20));
-
-        for (int i = 0; i < 4; i++) {
-            warrior.attack();
-            mage.takeDamage(10);
-        }
-
-        if (mage.getHealth() < 50) {
-            mage.heal();
-        }
-
-        for (int i = 0; i < 5; i++) {
-            mage.attack();
-            warrior.takeDamage(warrior.block(53));
-        }
-
-        System.out.printf("Health of %s = %s\n", warrior.getName(), warrior.getHealth());
-        System.out.printf("Health of %s = %s\n", mage.getName(), mage.getHealth());
+        warrior.takeDamage(warrior.block(100));
+        mage.takeDamage(30);
+        System.out.println("End battle");
+        System.out.printf("%s имеет %s HP\n", warrior.getName(), warrior.getHealth());
+        System.out.printf("%s имеет %s HP\n", mage.getName(), mage.getHealth());
     }
 
     public static void startDelivery (Vehicle vehicle, String destination){
