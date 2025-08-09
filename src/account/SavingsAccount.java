@@ -26,7 +26,7 @@ public class SavingsAccount extends Account {
     }
 
     public void applyInterestRate() {
-        this.balance *= 1 + (interestRate * 0.01);
+        this.balance *= 1 + (this.interestRate * 0.01);
         System.out.printf("Применено значение ключевой ставки к сберегательному счету. Новый баланс: %s\n", String.format("%.2f", balance));
     }
 }
